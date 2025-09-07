@@ -1,0 +1,99 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Rock+3D&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    
+    <p>Portfolio</p>
+    <nav>
+    <ul class="links">
+      <li><a href="#title">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+    
+  
+  </header>
+
+  <div class="front">
+      <h1>Jess Robinson</h1>
+      <p id="title">idk</p>
+  </div>
+  
+  <div class="heading">
+    <h1>Projects</h1>
+  </div>
+
+  <div id="projects">
+    <div class="box"> <!--images container-->
+        <div class="item">
+            <a href="catandmouse.html"><img src="img1.jpg"></a>
+        </div>
+
+        <div class="item">
+            <a href="infographic.html"><img src="Infographicmock.png"></a>
+        </div>
+
+        <div class="item">
+          <a href="stardome.html"><img src="end_frame.png"></a>
+      </div>
+
+        <div class="item">
+            <a href="outofsignal.html"><img src="cover.png"></a>
+        </div>
+
+        <div class="item">
+            <a href="ratatouille.html"><img src="home.png"></a>
+        </div>
+
+        <div class="item">
+            <a href="black_whole.html"><img src="black whole.png"></a>
+        </div>
+    </div>
+    
+    <div class="buttons"> 
+        <span class="prev"></span>
+        <span class="next"></span>
+    </div>
+
+    <div id="contact">
+        <h1>Contact Information</h1>
+        <p class="contact-left"><b>Email: </b>Jess.robinsonflohr@gmail.com</p>
+        <p class="contact-right"><b>Linkdin: </b><a href="https://www.linkedin.com/in/jess-robinson-405373382/">Jess Robinson</a></p>
+        <p class="contact-middle"><b>Phone Number: </b>021 452 423</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>idk</p>
+  </footer>
+
+  
+    <script>
+            let prev = document.querySelector('.prev');
+            let next = document.querySelector('.next');
+
+            next.addEventListener('click', function(){
+                let items = document.querySelectorAll('.item');
+                document.querySelector('.box').appendChild(items[0]);
+            })
+
+            prev.addEventListener('click', function(){
+                let items = document.querySelectorAll('.item');
+                document.querySelector('.box').prepend(items[items.length -1]);
+            })
+    </script>
+    
+</body>
+</html>

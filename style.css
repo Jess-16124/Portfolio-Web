@@ -289,6 +289,11 @@ footer {
 .gallery {
     background-color: #fff;
     justify-items: center;
+
+    .mobile {
+        width: 30%;
+        padding: 15%;
+    }
 }
 
 .gallery img {

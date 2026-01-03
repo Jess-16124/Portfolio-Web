@@ -293,6 +293,7 @@ footer {
     .mobile {
         width: 30%;
         padding: 15%;
+        scale: 0.8;
     }
 }
 
